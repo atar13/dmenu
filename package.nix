@@ -8,14 +8,14 @@ stdenv.mkDerivation {
   src = fetchFromGitHub {
     owner = "atar13";
     repo = "dmenu";
-    rev = "19559d23ab0c9c7c592f91d9af74016e407f4b4d";
-    sha256 = "sha256-mpWvIc8j4vDoipCputK/JdO7m3bzDCQ9M8L1dXFOK+s=";
+    rev = "e56082aa49888a3550865ce3374006c187764c31";
+    sha256 = "sha256-jHpWtsbW3o/P01SRSCsUGDstEgSSrE87YSWRx3wAnqY=";
   };
 
-  buildInputs = [ 
-      libXft 
-      libXinerama 
-      imlib2
+  buildInputs = [
+    libXft
+    libXinerama
+    imlib2
   ];
 
   prePatch = ''
@@ -27,5 +27,6 @@ stdenv.mkDerivation {
     homepage = "https://github.com/atar13/dmenu";
     license = licenses.mit;
     platforms = platforms.all;
+    mainProgram = "dmenu";
   };
 }
