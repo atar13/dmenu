@@ -1,0 +1,12 @@
+dmenu
+dmenu_path
+dmenu_run
+stest
+
+*.orig
+*.rej
+*.o
+*.1
+
+
+result
